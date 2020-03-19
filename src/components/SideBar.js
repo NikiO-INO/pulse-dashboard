@@ -77,47 +77,47 @@ const SideBar = () => {
         <ul className="sidebar-menu scrollable pos-r">
 
           {isViewAvailableForUserState(user, '/snapshots') && (
-          <li className="nav-item mT-30 active">
-            <a className="sidebar-link" href="/snapshots">
-              <span className="icon-holder">
-                <i className="c-blue-500 ti-dashboard" />
-              </span>
-              <span className="title">Snapshots</span>
-            </a>
-          </li>
+            <li className="nav-item mT-30 active">
+              <a className="sidebar-link" data-testid="snapshots" href="/snapshots">
+                <span className="icon-holder">
+                  <i className="c-blue-500 ti-dashboard" />
+                </span>
+                <span className="title">Snapshots</span>
+              </a>
+            </li>
           )}
 
           {isViewAvailableForUserState(user, '/revocations') && (
-          <li className="nav-item">
-            <a className="sidebar-link" href="/revocations">
-              <span className="icon-holder">
-                <i className="c-brown-500 ti-unlink" />
-              </span>
-              <span className="title">Revocations</span>
-            </a>
-          </li>
+            <li className="nav-item">
+              <a className="sidebar-link" data-testid="revocations" href="/revocations">
+                <span className="icon-holder">
+                  <i className="c-brown-500 ti-unlink" />
+                </span>
+                <span className="title">Revocations</span>
+              </a>
+            </li>
           )}
 
           {isViewAvailableForUserState(user, '/reincarcerations') && (
-          <li className="nav-item">
-            <a className="sidebar-link" href="/reincarcerations">
-              <span className="icon-holder">
-                <i className="c-red-500 ti-reload" />
-              </span>
-              <span className="title">Reincarcerations</span>
-            </a>
-          </li>
+            <li className="nav-item">
+              <a className="sidebar-link" data-testid="reincarcerations" href="/reincarcerations">
+                <span className="icon-holder">
+                  <i className="c-red-500 ti-reload" />
+                </span>
+                <span className="title">Reincarcerations</span>
+              </a>
+            </li>
           )}
 
           {isViewAvailableForUserState(user, '/programevaluation/freethroughrecovery') && (
-          <li className="nav-item">
-            <a className="sidebar-link" href="/programEvaluation/freeThroughRecovery">
-              <span className="icon-holder">
-                <i className="c-green-500 ti-location-arrow" />
-              </span>
-              <span className="title">Free Through Recovery</span>
-            </a>
-          </li>
+            <li className="nav-item">
+              <a className="sidebar-link" data-testid="freeThroughRecovery" href="/programEvaluation/freeThroughRecovery">
+                <span className="icon-holder">
+                  <i className="c-green-500 ti-location-arrow" />
+                </span>
+                <span className="title">Free Through Recovery</span>
+              </a>
+            </li>
           )}
 
           <li className="bottom-item">
